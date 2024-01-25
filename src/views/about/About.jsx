@@ -11,7 +11,7 @@ const About = () => {
             <div className="custom-background">
                 <Container className="mx-auto" style={{ maxWidth: "1400px" }}>
                     <div className=' custom-about-title  d-flex align-items-center justify-content-center'>
-                        <h1>SportElegance</h1>
+                        <h1>Marathon</h1>
                         <Image src="../../../public/logo-sport-eg.png" className="mx-4 home-logo" rounded />
                     </div>
 

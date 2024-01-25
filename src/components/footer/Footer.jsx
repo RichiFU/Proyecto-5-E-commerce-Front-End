@@ -26,13 +26,13 @@ const Footer = () => {
                             <hr className="mb-4" />
                             <ul className="list-unstyled text-md-start">
                                 <li className="mb-3">
-                                    <a href="#" className="links-footer text-light" >Inicio</a>
+                                    <a href="/" className="links-footer text-light" >Inicio</a>
                                 </li>
                                 <li className="mb-3">
-                                    <a href="#" className="links-footer text-light">Sobre Nosotros</a>
+                                    <a href="/about" className="links-footer text-light">Sobre Nosotros</a>
                                 </li >
                                 <li className="mb-3">
-                                    <a href="#" className="links-footer text-light">Contacto</a>
+                                    <a href="/products" className="links-footer text-light">Productos</a>
                                 </li>
                                 <li className="mb-3">
                                     <NavLink to="/terms" className="links-footer text-light" onClick={scrollToTop}>
