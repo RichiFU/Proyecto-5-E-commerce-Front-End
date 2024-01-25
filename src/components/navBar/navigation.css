@@ -1,0 +1,42 @@
+.nav-logo {
+    width: 60px;
+    margin-right: 20px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-color {
+    background: #062532;
+}
+
+.nav-logo:hover {
+    transform: scale(1.12);
+}
+
+.custom-navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.pixel-nav {
+    background-image: linear-gradient(rgba(19, 1, 34, 0.900), rgb(0, 0, 0)), url('/public/images/nav-pixel-2.jpg');
+    background-position: center;
+}
+
+.navigation-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.account-circle-icon {
+    color: white !important;
+    font-size: 34px !important;
+    margin-top: 4px;
+}
+
+.account-circle-icon:hover {
+    color: lightgray !important;
+}

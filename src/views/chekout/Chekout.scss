@@ -1,0 +1,113 @@
+
+.background-checkout {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(245, 245, 245, 1) 20%,
+            rgba(245, 245, 245, 1) 40%,
+            rgba(245, 245, 245, 1) 60%,
+            rgba(245, 245, 245, 1) 80%,
+            rgba(255, 255, 255, 1) 100%
+        );
+}
+
+.checkout-container {
+    overflow-y: scroll;
+    height: 60vh;
+    padding-bottom: 100px;
+}
+
+.checkout-container table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+
+}
+
+.checkout-container table thead {
+    font-weight: 700;
+}
+
+.checkout-container table thead th {
+    background: #155e75;
+    color: #fff;
+    font-size: 20px;
+    padding: 4px 0;
+}
+
+.checkout-cartotal{
+    border-bottom: 2px solid #155e75; 
+}
+
+.border-coupon {
+    border-bottom: 2px solid #155e75;
+}
+
+.border-total {
+    border-bottom: 2px solid #155e75;
+}
+
+.checkout-bottom .total h5,
+.checkout-bottom .coupon h5 {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    padding: 6px 12px;
+    background: #155e75;
+}
+
+.container-title4 {
+    background: #eee;
+    color: black;
+    font-size: 20px;
+    border-bottom: 2px solid #155e75; 
+    padding: 30px;
+}
+
+
+.checkout-bottom .coupon input {
+    padding: 0 12px;
+}
+
+.checkout-bottom .coupon input {
+    height: 40px;
+    margin: 0 0 20px 12px;
+}
+
+
+.checkout-bottom .total h6 {
+    margin-top: 6px;
+    padding: 0 12px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.parrafo-checkout {
+    padding: 0 12px;
+}
+
+.total .parrafo-checkout{
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+.paypal-container{
+    margin-top: 20px;   
+}
+
+.comprar{
+    font-size: 20px;
+    padding: 0 12px;
+}
+
+.buton-aplicar{
+    margin-left: 30px;
+}
+
+.bco-estado-img{
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}

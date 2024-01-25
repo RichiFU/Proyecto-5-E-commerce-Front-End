@@ -1,0 +1,90 @@
+.bg-home {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(245, 245, 245, 1) 20%,
+            rgba(245, 245, 245, 1) 40%,
+            rgba(245, 245, 245, 1) 60%,
+            rgba(245, 245, 245, 1) 80%,
+            rgba(255, 255, 255, 1) 100%
+        );
+    color: black;
+}
+
+.content-carousel-1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px;
+}
+
+.content-carousel-1 h4 {
+    margin-top: 20px;
+}
+
+.home-logo{
+    width: 50px;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-c-home1 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.399)), url('../../assets/ROPA_DEPORTIVA.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 65vh;
+    width: 100%;
+}
+
+.custom-c-home2 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.425)), url('../../assets/descuentos2.avif');
+    background-size: cover;
+    background-position: center center;
+    height: 65vh;
+    width: 100%;
+}
+
+.custom-c-home3 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.441)), url('../../assets/despachogratis.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 65vh;
+    width: 100%;
+}
+
+.content-carousel-2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px;
+}
+
+.content-carousel-2 h4 {
+    margin-top: 20px;
+}
+
+.button-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.custom-button {
+    padding: 10px 30px !important;
+    font-weight: bold !important;
+    border: 2px solid #155e75 !important; 
+    background-color: transparent; 
+    color: #155e75 !important ;  
+    text-decoration: none !important;
+}
+
+.custom-button:hover {
+    font-weight: bold !important;
+    background-color: #155e75 !important; 
+    color: #fff !important ;  
+    text-decoration: none !important;
+}
+
+
+

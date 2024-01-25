@@ -1,0 +1,11 @@
+.bg-profile {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(245, 245, 245, 1) 20%,
+            rgba(245, 245, 245, 1) 40%,
+            rgba(245, 245, 245, 1) 60%,
+            rgba(245, 245, 245, 1) 80%,
+            rgba(255, 255, 255, 1) 100%
+        );
+    color: black;
+}

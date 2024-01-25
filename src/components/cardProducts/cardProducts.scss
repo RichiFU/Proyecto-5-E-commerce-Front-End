@@ -1,0 +1,23 @@
+.custom-button1 {
+  color: #155e75 !important;
+  font-size: 2rem !important;
+  transition: color 0.3s, font-size 0.3s !important;
+}
+
+.custom-button1:hover {
+  color: #3f83a1 !important;
+  font-size: 2.4rem !important;
+  /* Tamaño diferente al pasar el mouse */
+}
+
+.custom-button1:active {
+  font-size: 2rem !important;
+  /* Volver al tamaño original al hacer clic */
+}
+
+
+.rounded-xl img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

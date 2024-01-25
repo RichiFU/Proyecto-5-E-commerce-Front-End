@@ -1,0 +1,16 @@
+.custom-footer {
+    background: #062532
+}
+
+.social-icons-a {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons-a:hover {
+    transform: scale(1.45);
+}
+
+.links-footer:hover {
+    color:#c4c4c4 !important;
+}
