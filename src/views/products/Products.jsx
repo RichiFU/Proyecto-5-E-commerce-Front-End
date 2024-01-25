@@ -9,7 +9,6 @@ import Spinner from 'react-bootstrap/Spinner';
 const Products = () => {
     const { getProducts, products } = useContext(ProductContext);
     const [loading, setLoading] = useState(true);
-    const [sortOrder, setSortOrder] = useState('');
     const [sortType, setSortType] = useState('');
 
     useEffect(() => {
@@ -31,17 +30,20 @@ const Products = () => {
         setSortType(event.target.value);
     };
 
+    // Ordena por Nombre y Precio
     const sortedProducts = products.slice().sort((a, b) => {
         if (sortType === 'name') {
             const nameA = a.name.toLowerCase();
             const nameB = b.name.toLowerCase();
-
-            return sortOrder === 'asc' ? nameA.localeCompare(nameB) : nameB.localeCompare(nameA);
+            return nameA.localeCompare(nameB);
         } else if (sortType === 'price') {
             const priceA = a.price;
             const priceB = b.price;
-
-            return sortOrder === 'asc' ? priceA - priceB : priceB - priceA;
+            return priceA - priceB;
+        } else if (sortType === 'price-asc') {
+            const priceA = a.price;
+            const priceB = b.price;
+            return priceB - priceA;
         }
 
         // Por defecto, ordena por nombre ascendente
@@ -52,23 +54,23 @@ const Products = () => {
 
     return (
         <div className="container">
-
             {/* Titulo */}
             <div className='title-container d-flex align-items-center mt-5 py-3'>
                 <h1 className="text-4xl">Nuestros Productos</h1>
                 <ShoppingBagIcon className="ml-3" sx={{ fontSize: 32, color: '#155e75' }} />
             </div>
 
-            {/* <div className="container-title3 dflex justify-center fs-6">
+            {/* Filtro por nombre y precio */}
+            <div className="container-title3 dflex justify-center fs-6">
                 <label className="ml-4">
                     Ordenar por :
                     <select value={sortType} onChange={handleSortTypeChange} className="ml-3">
                         <option value="name">Nombre</option>
-                        <option value="price">Precio de mayor a menor</option>
-                        <option value="price-asc">Precio de menor a mayor</option>
+                        <option value="price">Precio de Menor a Mayor</option>
+                        <option value="price-asc">Precio de Mayor a Menor</option>
                     </select>
                 </label>
-            </div> */}
+            </div>
 
             {/* Cards */}
             {loading ? (

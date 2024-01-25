@@ -17,7 +17,7 @@ const Checkout = () => {
             {/* Titulo */}
             <div className='container'>
                 <div className="my-5 container-title4 capitalize">
-                    <span>Carro de compra</span>
+                    <span><b>Carro de compra</b></span>
                     <span className='ml-4'>|</span>
                     <span className='ml-4'> {cartCount}  Producto{cartCount !== 1 && 's'}</span>
                 </div>
