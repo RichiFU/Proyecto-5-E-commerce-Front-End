@@ -1,4 +1,4 @@
-# Marathon Sportswear Frontend
+# Marathon Frontend
 
 Este proyecto es el frontend de Marathon, una tienda deportiva en línea, que cuenta con variados productos deportivos, ademas cuenta con registro de usuario, carro de compras y un metodo de pago. La aplicación web utiliza como estructura HTML y está construida en React. A continuación, se presenta una descripción de los componentes y funcionalidades clave del proyecto.
 
@@ -15,6 +15,14 @@ El componente `App` es el componente principal que integra las rutas y proveedor
 ### Rutas y Proveedores
 
 El archivo `AppRouter.jsx` gestiona las rutas y la navegación de la aplicación, conectando los distintos componentes. Los proveedores de contexto, como `UserProvider`, `ProductProvider`, y `CartProvider`, se encargan del estado global de la aplicación.
+
+## Componente Inicio (Home)
+
+El componente `Home` es la página de inicio principal de la aplicación. Muestra información destacada sobre la tienda deportiva Marathon, junto con una presentación de imágenes (carousel) para atraer la atención de los usuarios.
+
+## Navigation (Navegación)
+
+El componente `Navigation` representa la barra de navegación superior de la aplicación. Proporciona enlaces a las diferentes secciones del sitio web y puede contener elementos interactivos para facilitar la navegación del usuario.
 
 ### Inicio de sesión y registro
 
@@ -56,6 +64,9 @@ El `CartContext` gestiona el estado del carrito de compras, incluida la adición
 
 El componente `VerticalTabs` muestra los términos y condiciones de uso de la tienda en pestañas verticales. Cada pestaña aborda un tema específico, y los usuarios pueden navegar para obtener información detallada. Este componente se encuentra en el archivo `termsandconditions.jsx`.
 
+### Componente Footer (Pie de Página)
+El componente `footer` proporciona información de contacto y enlaces a redes sociales en el pie de página del sitio web. Este componente se encarga de mejorar la accesibilidad al ofrecer información adicional y facilitar la interacción del usuario con la tienda.
+
 ## Estilos y Diseño
 
 La aplicación utiliza estilos proporcionados por Material-UI, CSS, Sass, Tailwind y React-Bootstrap para una apariencia atractiva y responsiva.
@@ -67,8 +78,6 @@ Se implementan validaciones en el componente `Profile` y `SignInSide` para garan
 ## Configuración del Proyecto
 
 - **Vite y React**: La aplicación utiliza Vite como herramienta de construcción y React como biblioteca principal.
-
-- **Dependencias**: Entre las dependencias clave se incluyen React, Material-UI, Bootstrap, Axios, y React Router.
 
 ## MongoDB
 
