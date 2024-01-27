@@ -32,7 +32,7 @@ const productReducer = (state, action) => {
             }
 
         default:
-            // si falla que retorne el estado tal y como esta
+            // si falla retorna el estado tal y como esta
            return state
             }
     }

@@ -1,5 +1,4 @@
 
-
 .container-title3 {
 	padding: 30px;
 	margin-bottom: 50px;
@@ -32,15 +31,13 @@
 	border-bottom: 2px solid #155e75;
 }
 
+.container-share{
 
-
-
-
-
-
-
-
-
+	margin-top: 80px;
+	border-top: 2px solid #155e75 !important;
+	padding: 10px 0;
+	align-items: center;
+}
 
 
 
@@ -55,21 +52,5 @@
 .container-social span {
 	font-weight: 300;
 	color: #252525;
-}
-
-.container-buttons-social {
-	display: flex;
-	gap: 15px;
-	align-items: center;
-}
-
-.container-buttons-social a:link,
-.container-buttons-social a:visited {
-	color: #666;
-	font-size: 15px;
-}
-
-.container-buttons-social a:hover {
-	color: #1bbeb4;
 }
 

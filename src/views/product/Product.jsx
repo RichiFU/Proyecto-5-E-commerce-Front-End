@@ -1,6 +1,7 @@
+
 import ProductContext from "../../context/products/ProductContex";
 import CartContext from "../../context/cart/cartContext";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
 // Estilo
@@ -9,22 +10,36 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { Button } from "react-bootstrap";
+import { IconButton } from "@mui/material";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import './product.css'
+import ShareIcon from '@mui/icons-material/Share';
+import './product.css';
+
 
 const Product = () => {
-
     const { id } = useParams();
-
     const { getProductById, product } = useContext(ProductContext);
-    const { addItemToCart, cartCount } = useContext(CartContext)
+    const { addItemToCart, cartCount } = useContext(CartContext);
+    const [copiedMessageVisible, setCopiedMessageVisible] = useState(false);
 
-    const handleAdd = () => { if (cartCount < stock) addItemToCart(product[0]) }
 
-    const { name, stock, price, image, sku, detail } = product[0];
+    const handleAdd = () => {
+        if (cartCount < stock) addItemToCart(product[0]);
+    };
 
-    console.log(detail);
+    // Funcion que copia url al compartir
+    const handleShare = () => {
+        const currentUrl = window.location.href;
+        navigator.clipboard.writeText(currentUrl);
+        setCopiedMessageVisible(true);
 
+        
+        setTimeout(() => {
+            setCopiedMessageVisible(false);
+        }, 3000); // 3000 milisegundos (3 segundos) 
+    };
+
+    const { name, stock, price, image, sku, description, size } = product[0];
 
     useEffect(() => {
         const fetchProduct = async () => {
@@ -33,11 +48,8 @@ const Product = () => {
         fetchProduct();
     }, []);
 
-
     return (
-
         <section className="container">
-
             <div className='checkout-bottom mt-5 container mb-5'>
                 <nav aria-label="Breadcrumb">
                     <ol
@@ -80,7 +92,6 @@ const Product = () => {
 
                 <div className="container-title3 capitalize">{name}</div>
                 <div className='row'>
-
                     {/* Imagen */}
                     <div className='coupon col-lg-6 cold-md-6 col12 mb-4'>
                         <div className="container-img">
@@ -91,7 +102,7 @@ const Product = () => {
                         </div>
                     </div>
 
-                    {/* Caracteristicas */}
+                    {/* Características */}
                     <div className='total col-lg-6 cold-md-6 col12'>
                         <div>
                             <div className="product-carac">
@@ -113,7 +124,7 @@ const Product = () => {
                             </div>
                         </div>
 
-                        {/* Boton */}
+                        {/* Botón */}
                         <div className="container-add-cart">
                             {stock === 0 ? (
                                 <h4 className="text-red-800 no-underline">Sin Stock</h4>
@@ -131,29 +142,42 @@ const Product = () => {
                                 aria-controls="panel2-content"
                                 id="panel2-header"
                             >
-                                <Typography>Descripción</Typography>
+                                <Typography fontWeight="bold">Descripción</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-
+                                    {description}
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
-                        <div className="container-social">
-                            <span>Compartir</span>
-                            <div className="container-buttons-social">
-                                <a href="#"><i className="fa-solid fa-envelope"></i></a>
-                                <a href="#"><i className="fa-brands fa-facebook"></i></a>
-                                <a href="#"><i className="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i className="fa-brands fa-pinterest"></i></a>
-                            </div>
+                        <Accordion>
+                            <AccordionSummary
+                                expandIcon={<ArrowDropDownIcon />}
+                                aria-controls="panel2-content"
+                                id="panel2-header"
+                            >
+                                <Typography fontWeight="bold">Talla</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography>
+                                    {size}
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                        <div className="container-share">
+                        <span className="text-gray-500">Compartir:</span>
+                            <IconButton onClick={handleShare} aria-label="Compartir" sx={{ color: "#155e75", fontSize: 40, marginLeft: 1 }}>
+                                <ShareIcon sx={{ fontSize: 30 }} />
+                            </IconButton>
+                            {copiedMessageVisible && (
+                                <span style={{ color: "green", marginTop: 10, marginLeft:10 }}>
+                                    URL copiada!
+                                </span>
+                            )}
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };

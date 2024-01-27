@@ -1,5 +1,7 @@
 import { useContext, useState, useEffect } from 'react';
 import UserContext from '../../context/user/UserContext';
+
+// Estilo
 import {
   Box,
   Button,
@@ -205,85 +207,6 @@ const Profile = () => {
         </div>
       </div>
     </div>
-    // <div>
-    //   <Container sx={{
-    //     display: "flex",
-    //     justifyContent: "center",
-    //     alignContent: "center",
-    //     marginTop: "140px"
-    //   }}>
-    //     <Card sx={{ maxWidth: 500 }}>
-    //       <CardMedia sx={{ height: 250, width: 500 }} image="https://source.unsplash.com/random" title="Hombre con cigarro" />
-    //       <CardContent>
-    //         <Typography
-    //           gutterBottom
-    //           variant="h4"
-    //           component="div"
-    //           align="center"
-    //         >
-    //           {`${infoUser.name}`}
-    //         </Typography>
-    //         <Typography variant="h6" color="text.secondary" align="center">
-    //           {infoUser.email}
-    //         </Typography>
-    //       </CardContent>
-
-
-    //       <CardActions sx={{ justifyContent: "center" }}>
-    //         <Button onClick={handleOpen}>Edit User</Button>
-    //         <Button size="small">Advanced Config</Button>
-    //       </CardActions>
-    //     </Card>
-    //   </Container>
-
-    //   <Box
-    //     component="form"
-    //     onSubmit={(e) => {
-    //       e.preventDefault();
-    //       sendData();
-    //     }}
-    //     display={!open ? "none" : "flex"}
-    //     sx={{
-    //       "& .MuiTextField-root": { m: 1, width: "45ch" },
-    //       justifyContent: "center",
-    //       alignContent: "center",
-    //       marginTop: "20px",
-    //       marginBottom: "40px"
-    //     }}
-    //     noValidate
-    //     autoComplete="off"
-    //   >
-    //     <Typography id="modal-modal-title" variant="h6" component="h2" align="center">
-    //       Edita tu usuario!
-    //     </Typography>
-    //     <TextField
-    //       id="outlined-disabled"
-    //       label="Name"
-    //       value={userForm.name}
-    //       name="name"
-    //       onChange={handleChange}
-    //       type="text"
-    //     />
-    //     <TextField
-    //       id="outlined-disabled"
-    //       label="Age"
-    //       value={userForm.age}
-    //       type="number"
-    //       onChange={handleChange}
-    //       name="age"
-    //     />
-    //     <TextField
-    //       id="outlined-disabled"
-    //       label="Email"
-    //       value={userForm.email}
-    //       type="email"
-    //       onChange={handleChange}
-    //       name="email"
-    //     />
-    //     <Button type="submit">Send</Button>
-    //     <Button onClick={() => setOpen(false)}>Cancel</Button>
-    //   </Box>
-    // </div>
   );
 };
 
