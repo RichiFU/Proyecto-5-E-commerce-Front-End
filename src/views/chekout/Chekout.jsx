@@ -72,6 +72,13 @@ const Checkout = () => {
                                 <h6>Total:</h6>
                                 <p className='parrafo-checkout'>$ {cartTotal}</p>
                             </div>
+                            {cartItems.length > 0 && (
+                <div className='mt-1 mb-4 d-flex justify-content-between border-total'>
+                    <h4 className='comprar2'>Envío:</h4>
+                    {/* Contenido del div de envío */}
+                    <p className='comprar3'>Temuco, Region de la Araucania, Calle e-Commerce #123</p>
+                </div>
+            )}
                             <div className='d-flex justify-content-between mt-3'>
                                 <h4 className='comprar'>Comprar:</h4>
                             </div>

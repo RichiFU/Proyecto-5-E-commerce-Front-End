@@ -175,7 +175,7 @@ const Profile = () => {
                 </Typography>
                 <TextField
                   id="outlined-disabled"
-                  label="Name"
+                  label="Nombre"
                   value={userForm.name}
                   name="name"
                   onChange={handleChange}
@@ -183,7 +183,7 @@ const Profile = () => {
                 />
                 <TextField
                   id="outlined-disabled"
-                  label="Age"
+                  label="Edad"
                   value={userForm.age}
                   type="number"
                   onChange={handleChange}
@@ -191,7 +191,7 @@ const Profile = () => {
                 />
                 <TextField
                   id="outlined-disabled"
-                  label="Email"
+                  label="Correo Electrónico"
                   value={userForm.email}
                   type="email"
                   onChange={handleChange}
