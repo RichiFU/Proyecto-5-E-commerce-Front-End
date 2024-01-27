@@ -16,11 +16,11 @@ El componente `App` es el componente principal que integra las rutas y proveedor
 
 El archivo `AppRouter.jsx` gestiona las rutas y la navegación de la aplicación, conectando los distintos componentes. Los proveedores de contexto, como `UserProvider`, `ProductProvider`, y `CartProvider`, se encargan del estado global de la aplicación.
 
-## Componente Inicio (Home)
+## Inicio (Home)
 
 El componente `Home` es la página de inicio principal de la aplicación. Muestra información destacada sobre la tienda deportiva Marathon, junto con una presentación de imágenes (carousel) para atraer la atención de los usuarios.
 
-## Navigation (Navegación)
+## Navegación
 
 El componente `Navigation` representa la barra de navegación superior de la aplicación. Proporciona enlaces a las diferentes secciones del sitio web y puede contener elementos interactivos para facilitar la navegación del usuario.
 
