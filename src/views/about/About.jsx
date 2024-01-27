@@ -55,7 +55,7 @@ const About = () => {
                                 Lunes a Viernes : de 10.00 a 18.00 h
                             </p>
                             <p>
-                                Sabados, Domingos y Festivos : de 11.00 a 19.30 horas
+                                Sábados, Domingos y Festivos : de 11.00 a 19.30 horas
                             </p>
                         </div>
                     </div>
