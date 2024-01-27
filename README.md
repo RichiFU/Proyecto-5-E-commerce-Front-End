@@ -48,6 +48,14 @@ El componente `Checkout` gestiona el proceso de pago y finalización de la compr
 
 El componente `PayPal` integra la funcionalidad de pago a través de PayPal en el proceso de pago. Permite a los usuarios realizar transacciones de manera segura utilizando sus cuentas de PayPal o tarjetas de crédito. Este componente se encuentra en el archivo `PayPal.jsx`.
 
+### Términos y Condiciones
+
+El componente `VerticalTabs` muestra los términos y condiciones de uso de la tienda en pestañas verticales. Cada pestaña aborda un tema específico, y los usuarios pueden navegar para obtener información detallada. Este componente se encuentra en el archivo `termsandconditions.jsx`.
+
+### Componente Footer (Pie de Página)
+El componente `footer` proporciona información de contacto y enlaces a redes sociales en el pie de página del sitio web. Este componente se encarga de mejorar la accesibilidad al ofrecer información adicional y facilitar la interacción del usuario con la tienda.
+
+
 ## Contexto de Usuario (UserContext)
 
 El `UserContext` maneja la información del usuario y proporciona funciones para la autenticación y la gestión del perfil del usuario. Se encuentra en el archivo `UserContext.jsx`.
@@ -59,13 +67,6 @@ El `ProductContext` gestiona la información de los productos disponibles en la 
 ## Contexto de Carrito (CartContext)
 
 El `CartContext` gestiona el estado del carrito de compras, incluida la adición, eliminación y actualización de productos en el carrito. Se encuentra en el archivo `CartContext.jsx`.
-
-### Términos y Condiciones
-
-El componente `VerticalTabs` muestra los términos y condiciones de uso de la tienda en pestañas verticales. Cada pestaña aborda un tema específico, y los usuarios pueden navegar para obtener información detallada. Este componente se encuentra en el archivo `termsandconditions.jsx`.
-
-### Componente Footer (Pie de Página)
-El componente `footer` proporciona información de contacto y enlaces a redes sociales en el pie de página del sitio web. Este componente se encarga de mejorar la accesibilidad al ofrecer información adicional y facilitar la interacción del usuario con la tienda.
 
 ## Estilos y Diseño
 
