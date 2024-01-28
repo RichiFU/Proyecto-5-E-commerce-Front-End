@@ -43,7 +43,7 @@ const Navigation = () => {
             <Navbar collapseOnSelect expand="lg" variant="dark" className="text-center navbar-color justify-content-between">
                 {/* Logo */}
                 <Nav.Link as={NavLink} to="/">
-                    <Image src="../../../src/assets/logo-sport-eg.png" className="ms-4 me-5 nav-logo" rounded />
+                    <Image src="../../../logo-sport-eg.png" className="ms-4 me-5 nav-logo" rounded />
                 </Nav.Link>
 
                 <Navbar.Toggle className="me-4" aria-controls="responsive-navbar-nav" />
