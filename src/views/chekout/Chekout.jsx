@@ -59,7 +59,7 @@ const Checkout = () => {
                             <h5>Descuentos</h5>
                             <div className='d-flex justify-content-between align-items-center'>
                                 <p className='parrafo-checkout'>Todos los jueves 15% de descuento con tarjetas Banco Estado</p>
-                                <img className='bco-estado-img' src="../../../public/tarjetas.jpeg" alt="" />
+                                <img className='bco-estado-img' src="../../../tarjetas.jpeg" alt="" />
                             </div>
 
                         </div>
