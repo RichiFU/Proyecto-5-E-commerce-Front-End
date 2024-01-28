@@ -97,7 +97,7 @@ const Product = () => {
                         <div className="container-img">
                             <img
                                 src={image}
-                                alt="imagen-producto"
+                                alt={name}
                             />
                         </div>
                     </div>
