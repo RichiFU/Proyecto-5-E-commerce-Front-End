@@ -12,13 +12,13 @@ const About = () => {
                 <Container className="mx-auto" style={{ maxWidth: "1400px" }}>
                     <div className=' custom-about-title  d-flex align-items-center justify-content-center'>
                         <h1>Marathon</h1>
-                        <Image src="../../../src/assets/logo-sport-eg.png" className="mx-4 home-logo" rounded />
+                        <Image src="../../../logo-sport-eg.png" className="mx-4 home-logo" rounded />
                     </div>
 
                     <Row className="mt-5 justify-content-around">
                         {/* Imagen del Restaurant */}
                         <Col lg={6}>
-                            <Image src="../../../src/assets/ropadeportiva.jpg" alt="ropa deportiva" fluid className="mb-4 mt-4" />
+                            <Image src="../../../ropadeportiva.jpg" alt="ropa deportiva" fluid className="mb-4 mt-4" />
                         </Col>
                         {/* Descripción del Restaurant */}
                         <Col lg={5}>
