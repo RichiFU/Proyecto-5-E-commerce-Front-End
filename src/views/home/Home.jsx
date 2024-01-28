@@ -16,7 +16,7 @@ const Home = () => {
                 {/* Presentación */}
                 <div className='title-container d-flex align-items-center'>
                     <h1>Marathon</h1>
-                    <Image src="../../../public/logo-sport-eg.png" className="mx-4 home-logo" rounded />
+                    <Image src="../../../src/assets/logo-sport-eg.png" className="mx-4 home-logo" rounded />
                 </div>
                 <h4>
                     Vive la fusión perfecta entre deporte, estilo y rendimiento en Marathon. 
