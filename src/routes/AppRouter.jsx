@@ -6,7 +6,7 @@ import Auth from "../views/auth/Auth"
 import Product from "../views/product/Product"
 import Checkout from "../views/chekout/Chekout"
 import Profile from "../views/profile/Profile"
-import About from "../views/about/about"
+import About from "../views/about/About"
 import NotFoundPage from "../views/notFoundPage/NotFoundPage"
 import TermsAndConditios from "../views/terms/TermsAndConditions"
 
