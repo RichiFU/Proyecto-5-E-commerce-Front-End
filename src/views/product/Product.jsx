@@ -13,6 +13,7 @@ import { Button } from "react-bootstrap";
 import { IconButton } from "@mui/material";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ShareIcon from '@mui/icons-material/Share';
+import Spinner from 'react-bootstrap/Spinner';
 import './product.css';
 
 
@@ -21,6 +22,7 @@ const Product = () => {
     const { getProductById, product } = useContext(ProductContext);
     const { addItemToCart, cartCount } = useContext(CartContext);
     const [copiedMessageVisible, setCopiedMessageVisible] = useState(false);
+    const [loading, setLoading] = useState(true);
 
 
     const handleAdd = () => {
@@ -43,10 +45,25 @@ const Product = () => {
 
     useEffect(() => {
         const fetchProduct = async () => {
-            await getProductById(id);
+            try {
+                setLoading(true);
+                await getProductById(id);
+                setLoading(false);
+            } catch (error) {
+                console.error('Error', error);
+                setLoading(false);
+            }
         };
         fetchProduct();
     }, []);
+
+    if (loading) {
+        return (
+            <div className="d-flex align-items-center justify-content-center mt-5 mb-5 p-5">
+                <Spinner className="p-5 mb-5 mt-5" animation="border" variant="dark" />
+            </div>
+        );
+    }
 
     return (
         <section className="container">
