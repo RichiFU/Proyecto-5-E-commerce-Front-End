@@ -1,4 +1,4 @@
-import CartContext from '../../../context/cart/cartContext';
+import CartContext from '../../../context/cart/CartContext';
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom'
 

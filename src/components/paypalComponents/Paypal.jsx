@@ -2,7 +2,7 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 //Context
 import { useContext } from "react";
-import CartContext from "../../context/cart/cartContext";
+import CartContext from "../../context/cart/CartContext";
 import ProductContext from "../../context/products/ProductContex";
 
 export default function Paypal() {

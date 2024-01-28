@@ -7,7 +7,7 @@ import UserContext from "../../context/user/UserContext";
 import { Navbar, Nav, NavDropdown, Image, Spinner } from "react-bootstrap";
 import CartIcon from "../cartComponents/cartIcon/CartIcon";
 import CartDropdown from "../cartComponents/cartDropdown/CartDropdown";
-import CartContext from "../../context/cart/cartContext";
+import CartContext from "../../context/cart/CartContext";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 import './navigation.css'

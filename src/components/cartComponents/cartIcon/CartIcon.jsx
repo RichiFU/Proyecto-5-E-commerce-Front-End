@@ -1,4 +1,4 @@
-import CartContext from '../../../context/cart/cartContext' // Para utilizar el numero de productos en el carrito
+import CartContext from '../../../context/cart/CartContext' // Para utilizar el numero de productos en el carrito
 import { useContext } from 'react'
 
 // Estilos

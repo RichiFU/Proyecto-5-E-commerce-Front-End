@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import CartContext from "../../context/cart/cartContext"
+import CartContext from "../../context/cart/CartContext"
 import { useContext } from "react"
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import './cardProducts.scss'
