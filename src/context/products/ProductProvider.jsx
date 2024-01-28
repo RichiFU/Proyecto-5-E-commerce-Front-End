@@ -1,7 +1,7 @@
 import ProductContext from "./ProductContex";
-import { useReducer } from "react";
-import productReducer from "./ProductReducer";
+import productReducer from "./productReducer";
 import axiosClient from "../../config/axiosClient";
+import { useReducer } from "react";
 
 
 // aca se recibe el reducer, y se envia a todo los componentes que desee, desde provider
