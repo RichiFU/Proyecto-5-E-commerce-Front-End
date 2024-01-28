@@ -1,6 +1,6 @@
 import './Chekout.scss'
 import { useContext } from "react";
-import CartContext from "../../context/cart/cartContext";
+import CartContext from "../../context/cart/CartContext";
 import CheckoutItem from '../../components/checkComponents/ChekoutItem';
 import Paypal from "../../components/paypalComponents/Paypal";
 
