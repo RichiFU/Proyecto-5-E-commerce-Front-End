@@ -151,7 +151,7 @@ const Profile = () => {
             <div className="product-carac">
               <CardActions sx={{ justifyContent: "center" }}>
                 <Button onClick={handleOpen}>Editar Usuario</Button>
-                <Button size="small">Advanced Config</Button>
+                {/* <Button size="small">Eliminar Usuario</Button> */}
               </CardActions>
             </div>
             <div className="mt-4 product-carac mb-4">
