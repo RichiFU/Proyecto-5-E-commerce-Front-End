@@ -67,16 +67,17 @@
 
 .button-container{
     margin-top: 40px;
-    margin-bottom: 40px;
+    
 }
 
 .custom-button {
     padding: 10px 30px !important;
     font-weight: bold !important;
-    border: 2px solid #155e75 !important; 
+    border: 2px solid #155e75!important; 
     background-color: transparent; 
     color: #155e75 !important ;  
     text-decoration: none !important;
+   
 }
 
 .custom-button:hover {
@@ -87,4 +88,49 @@
 }
 
 
+.image-container-product {
+    position: relative;
+  }
+
+  .image-container-product::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.37) !important; 
+    z-index: 1; 
+}
+
+.img-fluid {
+    width: 98%;
+    height: auto;
+}
+
+.custom-button5 {
+    padding: 5px 20px !important;
+    font-weight: bold !important;
+    border: 2px solid white !important; 
+    background-color: transparent; 
+    color: white !important ;  
+    text-decoration: none !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.custom-button5:hover {
+    font-weight: bold !important;
+    background-color: #155e75 !important; 
+    color: #fff !important ;  
+    text-decoration: none !important;
+    border: 2px solid #155e75 !important; 
+}
+
+.map-container {
+    width: 99%;
+}
 
