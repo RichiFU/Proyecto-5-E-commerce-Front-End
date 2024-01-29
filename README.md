@@ -86,7 +86,7 @@ El proyecto utiliza MongoDB para almacenar los datos de los productos y de los u
 
 ## Back-End
 
-El proyecto se encuentra conectado con el siguiente Back-End:
+El proyecto se encuentra conectado con el siguiente Back-End: https://github.com/Andy-poblete/Proyecto5
 
 ## Tecnologías Utilizadas
 

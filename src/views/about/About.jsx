@@ -41,6 +41,36 @@ const About = () => {
                             </div>
                         </Col>
                     </Row>
+                    <Row className="mt-5 justify-content-around">
+
+                        {/* Compromiso */}
+                        <Col lg={6}>
+                            <div className="about-us-text mt-4">
+                                <div className="text-center mb-3">
+                                    <h2>Nuestro Compromiso</h2>
+                                </div>
+                                <div className="mt-4 custom-description-about">
+                                    <p>
+                                        En Marathon, nuestro compromiso principal es la satisfacción total de nuestros clientes.
+                                        Desde el momento en que entras por nuestras puertas, nos esforzamos por brindarte una experiencia única
+                                        que no solo satisface tus necesidades deportivas y de moda, sino que también supera tus expectativas.
+                                    </p>
+                                    <p>
+                                        Valoramos tu confianza y nos dedicamos a ofrecer productos de calidad, un servicio excepcional y
+                                        un ambiente acogedor. Tu satisfacción es nuestra prioridad número uno, y trabajamos incansablemente
+                                        para asegurarnos de que cada visita a Marathon sea memorable y gratificante.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </Col>
+
+                        {/* Imagen */}
+                        <Col lg={5}>
+                            <Image src="../../../satisfaccion-cliente.jpg" alt="satisfaccion al cliente" fluid className="mb-4 mt-4" />
+                        </Col>
+                    </Row>
+
                     <div className="custom-horario-about">
                         {/* Horario Del Restaurant */}
                         <div className="custom-about-title">

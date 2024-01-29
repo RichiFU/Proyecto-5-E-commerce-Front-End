@@ -69,8 +69,8 @@ const Home = () => {
                             {/* Puedes poner aquí tu imagen */}
                             <div className="overlay1">
                                 <img
-                                    src="https://img.freepik.com/foto-gratis/herramientas-deportivas_53876-138077.jpg"
-                                    alt="Imagen"
+                                    src="../../../deportesherramientas.jpg"
+                                    alt="Deportes"
                                     className="img-fluid"
                                     
                                 />
